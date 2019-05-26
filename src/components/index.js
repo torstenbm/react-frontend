@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../marie.webp';
+import logo2 from '../torsten.webp';
 import './index.css';
 import { Link, BrowserRouter as Router, Redirect } from "react-router-dom";
 import Cookies from 'universal-cookie';
@@ -13,7 +14,10 @@ class Index extends Component {
     return (
         <div className="App">
           <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+            <div className="images">
+              <img src={logo} className="App-logo" alt="logo" />
+              <img src={logo2} className="App-logo" alt="logo" />
+            </div>
             <div className="title">
               Welcome! What are you searching for?
             </div>
