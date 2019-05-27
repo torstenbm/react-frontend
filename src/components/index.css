@@ -13,7 +13,10 @@
     pointer-events: none;
     margin-bottom: 100px;
   }
-  
+  .logout{
+    margin-top: 50px;
+    background: black;
+  }
   .App-header {
     background-color: white;
     min-height: 100vh;

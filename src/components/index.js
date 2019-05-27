@@ -6,6 +6,12 @@ import { Link, BrowserRouter as Router, Redirect } from "react-router-dom";
 import Cookies from 'universal-cookie';
 
 class Index extends Component {
+  logout = () => {
+    const cookies = new Cookies();
+    cookies.remove("access");
+    window.location.reload(true); 
+  }
+  
   render() {
     const cookies = new Cookies();
     if (cookies.get("access") != "granted"){
@@ -27,6 +33,7 @@ class Index extends Component {
                 <a className="button cg-button" href="/content-gaps/">Content-gaps</a>
               </div>
             </Router>
+            <button className="logout button" onClick={this.logout}>Log out</button>
           </div>
         </div>
     );
