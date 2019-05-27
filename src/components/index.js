@@ -33,6 +33,7 @@ class Index extends Component {
                 <a className="button cg-button" href="/content-gaps/">Content-gaps</a>
               </div>
             </Router>
+            <a href="/explorer/" className="explore button" >Try the SPARQL explorer!</a>
             <button className="logout button" onClick={this.logout}>Log out</button>
           </div>
         </div>

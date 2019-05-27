@@ -1,0 +1,11 @@
+.explorer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    flex-direction: column;
+}
+.explorer > textarea {
+    height: 400px;
+    width: 60%;
+}

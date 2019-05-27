@@ -6,6 +6,7 @@ import Login from "./components/login";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import ContentGaps from './components/contentgaps';
 import Biases from './components/biases';
+import SparqlExplorer from './components/sparqlexplorer';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Route path="/login/" exact component={Login} />
           <Route path="/content-gaps/" exact component={ContentGaps} />
           <Route path="/biases/" exact component={Biases} />
+          <Route path="/explorer" exact component={SparqlExplorer} />
         </Router>
     );
   }
