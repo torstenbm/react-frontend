@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                app = docker.build("inf324/ui")
+                sh 'docker build -t inf324/ui .'
             }
         }
     }
