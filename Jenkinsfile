@@ -3,7 +3,9 @@ pipeline {
     def app
     stages {
         stage('Build image') { 
-            app = docker.build("inf324/ui")
+            steps{
+                app = docker.build("inf324/ui")
+            }
         }
     }
 }
