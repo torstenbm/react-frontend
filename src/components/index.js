@@ -25,12 +25,12 @@ class Index extends Component {
               <img src={logo2} className="App-logo" alt="logo" />
             </div>
             <div className="title">
-              Welcome! Please choose an option below
+              Welcome! Please choose an option
             </div>
             <Router>
               <div className="buttons">
-                <a className="button bias-button" href="/biases/">Analyze wikipedia</a>
-                <a href="/explorer/" className="explore button" >Try the SPARQL explorer!</a>
+                <a className="button bias-button" href="/biases/">Analyze wikipedia!</a>
+                <a className="button cg-button" href="/content-gaps/">Try the SPARQL explorer!</a>
               </div>
             </Router>
             <button className="logout button" onClick={this.logout}>Log out</button>
