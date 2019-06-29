@@ -25,15 +25,14 @@ class Index extends Component {
               <img src={logo2} className="App-logo" alt="logo" />
             </div>
             <div className="title">
-              Welcome! What are you searching for?
+              Please choose from below
             </div>
             <Router>
               <div className="buttons">
-                <a className="button bias-button" href="/biases/">Biases</a>
-                <a className="button cg-button" href="/content-gaps/">Content-gaps</a>
+                <a className="button bias-button" href="/biases/">Analyze wikipedia</a>
+                <a className="button cg-button" href="/content-gaps/">Try the SPARQL explorer</a>
               </div>
             </Router>
-            <a href="/explorer/" className="explore button" >Try the SPARQL explorer!</a>
             <button className="logout button" onClick={this.logout}>Log out</button>
           </div>
         </div>
