@@ -25,7 +25,7 @@ class Index extends Component {
               <img src={logo2} className="App-logo" alt="logo" />
             </div>
             <div className="title">
-              Welcome! Please choose a button
+              Welcome! Please choose from the options below
             </div>
             <Router>
               <div className="buttons">
