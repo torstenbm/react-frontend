@@ -18,14 +18,13 @@ class SparqlExplorer extends Component {
         this.setState({query: value})
     }
     executeQuery = () => {
-        Axios.post("https://sparql-service.herokuapp.com/runQuery", {query: this.state.query})
+        Axios.post("http://0.0.0.0:49160/runQuery", {query: this.state.query})
         .then(result => this.setState({results: JSON.stringify(result.data)}))
     }
   render() {
     return (
         <div className="explorer">
             <textarea value={this.state.query} onChange={this.handleChange}></textarea>
-
             <button onClick={this.executeQuery}>Submit</button>
             <textarea readOnly value={this.state.results}></textarea>
         </div>
