@@ -30,7 +30,7 @@ class Index extends Component {
             <Router>
               <div className="buttons">
                 <a className="button bias-button" href="/biases/">Analyze wikipedia</a>
-                <a className="button cg-button" href="/content-gaps/">Try the SPARQL explorer</a>
+                <a className="button cg-button" href="/explorer">Try the SPARQL explorer</a>
               </div>
             </Router>
             <button className="logout button" onClick={this.logout}>Log out</button>
