@@ -58,7 +58,7 @@ class Biases extends Component {
         </div>
       )
     }
-    return elements
+    return elements.reverse()
   }
 
 
