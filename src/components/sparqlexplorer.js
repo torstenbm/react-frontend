@@ -18,7 +18,7 @@ class SparqlExplorer extends Component {
         this.setState({query: value})
     }
     executeQuery = () => {
-        Axios.post("http://0.0.0.0:49160/runQuery", {query: this.state.query})
+        Axios.post("http://0.0.0.0:3020/runQuery", {query: this.state.query})
         .then(result => this.setState({results: JSON.stringify(result.data)}))
     }
   render() {

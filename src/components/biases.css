@@ -1,0 +1,12 @@
+.title {
+    margin: 50px;
+}
+.wiki {
+    margin: 50px;
+}
+.wiki > * {
+    margin: 10px 0;
+}
+.name {
+    font-weight: bold;
+}
