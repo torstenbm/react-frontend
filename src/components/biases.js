@@ -34,6 +34,9 @@ class Biases extends Component {
   renderElements = () => {
     let elements = [];
     for (let key in this.state){
+      if (! (uri in this.state[key]) ) {
+        continue;
+      }
       let editDiff = "https://en.wikipedia.org/wiki/WP:Labels?diff=" + this.state[key]["rev-id"];
       elements.push(
         <div className="wiki" key={key}>
